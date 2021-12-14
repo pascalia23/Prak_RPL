@@ -1,0 +1,26 @@
+Surat Masuk :
+  - Mahasiswa => Tanggal, Jenis Surat, Kepentingan, Status, Action (view, edit, delete, download)
+  - Dosen =>  Tanggal, Jenis Surat, Kepentingan, Status, Action (view, edit, delete, download)
+  - Admin => Tanggal, Pemohon, Jenis Surat, Kepentingan, Action (view, edit, delete, download, validasi)
+
+mahasiswa dan dosen sm, cm beda di pemohonnya, kalau pemohonnya ke mahasiswa ya masuknya ke mahasiswa
+terus surat status nya harus sudah di validasi dulu sm admin, jadi yg awalnya 0  menjadi 1.
+admin bisa dapatkan semua surat dan melakukan validasi (nampilkan surat, where surat belum di validasi)
+download sm validasi nanti aja, tambahkan tombolnya aja
+
+Buat Surat :
+  - Mahasiswa => personalia, kegiatan mahasiswa, daftar hadir, berita acara
+  - Dosen => personalia, surat tugas, berita acara
+  - admin => semua
+
+isi surat :
+  - personalia => perihal, tujuan surat, nama mitra, alamat mitra, keterangan
+  - kegiatan mahasiswa => perihal, tujuan surat, nama mitra, alamat mitra, keterangan
+  - berita acara => perihal, nama kegiatan, lokasi kegiatan, tanggal pelaksanaan, nama mitra, alamat mitra, keterangan
+  - surat tugas => perihal, tujuan, tgl pelaksanaan kegiatan, Lokasi kegiatan, nama mitra, keterangan
+  - daftar hadir => perihal, nama kegiatan, lokasi kegiatan, tanggal pelaksanaan, nama mitra, daftar peserta
+
+Surat Keluar :
+  - No.Surat, Tanggal keluar, Pemohon, Jenis Surat, Kepentingan, Action (view, edit, delete, download)
+
+sama kaya surat masuk cuma lihatya berdasarkan status (1)
